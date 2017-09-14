@@ -42,18 +42,40 @@
 
 # programflow
 
-for i in range(1, 5):
-    print('{0} is equals {1}' .format(i, i/2))
-    print('calc. complete')
-    print('please try again')
+# for i in range(1, 5):
+#     print('{0} is equals {1}' .format(i, i/2))
+#     print('calc. complete')
+#     print('please try again')
+#
+# name = str(input('hello \nplease enter your name: '))
+# print('nice to meet you {0}' .format(name))
+# age = int(input('how old are you {0}: ' .format(name)))
+# print('{0} you just said you are {1} years old' .format(name, age))
+#
+# if age >= 18:
+#     print('{0} your are old enough to enter this site' .format(name))
+#     print('WELCOME')
+# else:
+#     print('{0} please come back in {1} years time' .format(name, 18-age))
 
-name = str(input('hello \nplease enter your name: '))
-print('nice to meet you {0}' .format(name))
-age = int(input('how old are you {0}: ' .format(name)))
-print('{0} you just said you are {1} years old' .format(name, age))
-
-if age >= 18:
-    print('{0} your are old enough to enter this site' .format(name))
-    print('WELCOME')
+print('please guess a number')
+guess = int(input())
+if guess < 5:
+    print('please guess higher')
+    int(input())
+    if guess == 5:
+        print('Correct')
+    else:
+        print('Wrong')
+elif guess > 5:
+        print('please guess lower')
+        int(input())
+        if guess == 5:
+            print('Correct')
+        else:
+            print('Wrong')
 else:
-    print('{0} please come back in {1} years time' .format(name, 18-age))
+    print('you are smart you guessed right the first time')
+
+
+
